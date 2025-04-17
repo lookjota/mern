@@ -18,24 +18,15 @@ const Footer = () => {
             </div> */}
 
             <div>
-                <p className="font-semibold text-gray-800 dark:text-white">Quick Link</p>
+                <p className="font-semibold text-gray-800 dark:text-white">Link's</p>
 
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p>
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Who We Are</p>
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Our Philosophy</p>
+                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Página Principal</p>
+                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Catálogo</p>
+                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Assistência Técnica Especializada</p>
                 </div>
             </div>
 
-            <div>
-                <p className="font-semibold text-gray-800 dark:text-white">Industries</p>
-
-                <div className="flex flex-col items-start mt-5 space-y-2">
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Retail & E-Commerce</p>
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Information Technology</p>
-                    <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Finance & Insurance</p>
-                </div>
-            </div>
         </div>
         
         <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
@@ -56,7 +47,7 @@ const Footer = () => {
                 <img src="https://www.svgrepo.com/show/22048/dribbble.svg" className="" width="30" height="30" alt="db" />
             </div>
         </div>
-        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">© 2023 You Company Inc. All rights reserved.</p>
+        <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">© 2025 Vision Tech Inc. Todos os direitos reservados.</p>
     </div>
 </footer>
   )
