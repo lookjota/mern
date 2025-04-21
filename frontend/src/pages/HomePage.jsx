@@ -7,13 +7,13 @@ const categories = [
 	{ href: "/ssd", name: "Ssd", imageUrl: "/ssdSanDisk.jfif" },
 	{ href: "/headPhone", name: "Head Phone", imageUrl: "/headphone.jfif" },
 	{ href: "/tv", name: "Tv Box", imageUrl: "/tvbox.jfif" },
-	{ href: "/phone", name: "Phones", imageUrl: "/glasses.png" },
-	{ href: "/memory", name: "Memorias", imageUrl: "/jackets.jpg" },
-	{ href: "/smartWatch", name: "Smart Watch", imageUrl: "/suits.jpg" },
-	{ href: "/camera", name: "Camera", imageUrl: "/bags.jpg" },
-	{ href: "/celular", name: "Smart Phone", imageUrl: "/bags.jpg" },
-	{ href: "/mouse", name: "Mouse", imageUrl: "/bags.jpg" },
-	{ href: "/keyboard", name: "Teclado", imageUrl: "/bags.jpg" },
+	{ href: "/phone", name: "Phones", imageUrl: "/phone.jpg" },
+	{ href: "/memory", name: "Memorias", imageUrl: "/mP.jpg" },
+	{ href: "/smartWatch", name: "Smart Watch", imageUrl: "/SmartwatchPrincipal.jpg" },
+	{ href: "/camera", name: "Camera", imageUrl: "/cameraPrincipal.jpg" },
+	{ href: "/celular", name: "Smart Phone", imageUrl: "/smartPhonePrincipal.jpg" },
+	{ href: "/mouse", name: "Mouse", imageUrl: "/mousePrincipal.jpg" },
+	{ href: "/keyboard", name: "Teclado", imageUrl: "/keyboardMain.jpg" },
 ];
 
 const HomePage = () => {
@@ -53,7 +53,7 @@ const HomePage = () => {
 						<div className="flex flex-col items-center justify-center max-w-xl gap-3 mx-auto lg:flex-row">
 						<img
 								className='w-32 h-32 rounded-full border border-[#E8E3F4]'
-								src='https://i.pinimg.com/736x/97/f0/cb/97f0cb0bd91313be32a74ff14584d0f7.jpg'
+								src='/profile.png'
 						/>
 						</div>
 
@@ -80,7 +80,10 @@ const HomePage = () => {
 
 
 				<div className="text-center space-x-4 mt-6">
-					<button className="hover:bg-blue-500 bg-blue-400 translate-y-1 text-[#fff] sm:text-lg text-xs font-bold py-2.5 px-6  rounded-full inline-flex items-center">
+					<button 
+						className="hover:bg-blue-500 bg-blue-400 translate-y-1 text-[#fff] sm:text-lg text-xs font-bold py-2.5 px-6  rounded-full inline-flex items-center"
+						onClick={() => window.open("https://wa.me/5561995646646?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços.", "_blank")}
+					>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
 					<path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clipRule="evenodd" />
 				</svg>
@@ -129,8 +132,13 @@ const HomePage = () => {
 							</ul>
 						</div>
 						<div className="flex px-10 pb-10 justify-center">
-							<button className=" hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold
-							. rounded-lg">Solicitar Serviço</button>
+							<button 
+								className=" hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold
+								. rounded-lg"
+								onClick={() => window.open("https://wa.me/5561995646646?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços.", "_blank")}
+								>
+									Solicitar Serviço
+							</button>
 						</div>
 					</div>
 
@@ -139,7 +147,7 @@ const HomePage = () => {
 							<span className="font-semibold">Upgrade SSD 240gb</span>
 							<div className="flex items-center">
 								<span className="text-3xl">R$</span>
-								<span className="text-6xl font-bold">299</span>
+								<span className="text-6xl font-bold">270</span>
 								<span className="text-2xl text-white">,00</span>
 							</div>
 						</div>
@@ -166,7 +174,12 @@ const HomePage = () => {
 							</ul>
 						</div>
 						<div className="flex px-10 pb-10 justify-center">
-							<button className="hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold rounded-lg">Solicitar Serviço</button>
+							<button 
+								className="hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold rounded-lg"
+								onClick={() => window.open("https://wa.me/5561995646646?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços.", "_blank")}
+							>
+								Solicitar Serviço
+							</button>
 						</div>
 					</div>
 
@@ -202,7 +215,12 @@ const HomePage = () => {
 							</ul>
 						</div>
 						<div className="flex px-10 pb-10 justify-center">
-							<button className="hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold rounded-lg">Solicitar Serviço</button>
+							<button 
+								className="hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold rounded-lg"
+								onClick={() => window.open("https://wa.me/5561995646646?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços.", "_blank")}
+							>
+								Solicitar Serviço
+							</button>
 						</div>
 					</div>
 				</div>

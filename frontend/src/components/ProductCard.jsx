@@ -28,12 +28,12 @@ const ProductCard = ({ product }) => {
 				<h5 className='text-xl font-semibold tracking-tight text-white'>{product.name}</h5>
 				<div className='mt-2 mb-5 flex items-center justify-between'>
 					<p>
-						<span className='text-3xl font-bold text-emerald-400'>R${product.price}</span>
+						<span className='text-3xl font-bold text-blue-400'>R${product.price}</span>
 					</p>
 				</div>
 				<button
-					className='flex items-center justify-center rounded-lg bg-emerald-600 px-5 py-2.5 text-center text-sm font-medium
-					 text-white hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300'
+					className='flex items-center justify-center rounded-lg bg-blue-400 px-5 py-2.5 text-center text-sm font-medium
+					 text-white hover:bg-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-300'
 					onClick={handleAddToCart}
 				>
 					<ShoppingCart size={22} className='mr-2' />
