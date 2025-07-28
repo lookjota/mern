@@ -2,9 +2,10 @@
 
 
 MERN - React, Node.js, Express, MongoDB
-https://mern-liard-delta.vercel.app/
+<p>
+https://mern-liard-delta.vercel.app/  
+</p>
 
-About This Course:
 
 -   🚀 Project Setup
 -   🗄️ MongoDB & Redis Integration
