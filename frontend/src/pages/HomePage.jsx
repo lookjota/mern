@@ -63,7 +63,10 @@ const HomePage = () => {
 						</p>
 
 							<p className="sm:mt-8 mt-3 sm:px-44 text-[#E8E3F4] text-4xl sm:text-6xl font-semibold tracking-tighter">
-								Assistência Técnica Especilizada <span className="underline leading-8 underline-offset-8	decoration-8 decoration-blue-400">Notebooks & Desktop's</span>
+								Assistência Técnica Especilizada 
+							</p>
+							<p className="sm:mt-8 mt-3 sm:px-44 text-[#E8E3F4] text-4xl sm:text-6xl font-semibold tracking-tighter">
+							<span className="underline leading-8 underline-offset-8	decoration-8 decoration-blue-400">Smartphone <p>&</p> Notebook/pc's</span>
 							</p>
 
 							<p className="sm:mt-8 mt-2.5 text-[#E8E3F4] sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
