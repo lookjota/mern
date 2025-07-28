@@ -72,7 +72,7 @@ const HomePage = () => {
 							<p className="sm:mt-8 mt-2.5 text-[#E8E3F4] sm:px-72  sm:leading-loose text-lg font-normal tracking-tighter">
 							- Orçamentos Gratuitos<p></p> 
 							<p></p>
-							<span className="font-semibold">- Upgrade, Manutenção, Reparo de Carcaça</span> <p></p>
+							<span className="font-semibold">- Troca de tela, Upgrade, Manutenção, Reparo de Carcaça</span> <p></p>
 							Viste nossa loja
 							</p>
 						</div>
