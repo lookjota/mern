@@ -26,6 +26,23 @@ About This Course:
 -   🚀Caching with Redis
 -   ⌛ And a lot more...
 
+## 📦 Tecnologias
+
+- MongoDB (Atlas)
+- Express.js
+- React + Vite
+- Node.js
+- Tailwind CSS
+- Render (backend)
+- Vercel (frontend)
+
+## ⚙️ Instalação local
+
+```bash
+git clone https://github.com/lookjota/mern.git
+cd mern
+
+
 ### Setup .env file
 
 ```bash
