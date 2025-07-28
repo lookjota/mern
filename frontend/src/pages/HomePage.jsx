@@ -25,22 +25,7 @@ const HomePage = () => {
 
 	return (
 		<div className='relative min-h-screen text-black overflow-hidden'>
-			<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
-				<h1 className='text-center text-5xl sm:text-6xl font-bold text-gray-300 mb-4'>
-					Explore nosso Catalogo
-				</h1>
-				<p className='text-center text-xl text-gray-300 mb-12 underline leading-8 underline-offset-8	decoration-4 decoration-blue-400'>
-				Descubra as últimas tendências da Tecnologia
-				</p>
 
-				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-					{categories.map((category) => (
-						<CategoryItem category={category} key={category.name} />
-					))}
-				</div>
-
-				{!isLoading && products.length > 0 && <FeaturedProducts featuredProducts={products} />}
-			</div>
 			
 
 			{/* Hero Section */}
@@ -63,7 +48,14 @@ const HomePage = () => {
 						</p>
 
 							<p className="sm:mt-8 mt-3 sm:px-44 text-[#E8E3F4] text-4xl sm:text-6xl font-semibold tracking-tighter">
-								Assistência Técnica Especilizada 
+								Dev FullStack
+							</p>
+							<p className="mt-4 sm:px-32 text-[#E8E3F4] sm:text-xl text-sm font-semibold tracking-tighter">
+							MERN - React, Node.js, Express, MongoDB
+						</p>
+
+							<p className="sm:mt-8 mt-3 sm:px-44 text-[#E8E3F4] text-4xl sm:text-6xl font-semibold tracking-tighter">
+								Assistência Especilizada 
 							</p>
 							<p className="sm:mt-8 mt-3 sm:px-44 text-[#E8E3F4] text-4xl sm:text-6xl font-semibold tracking-tighter">
 							<span className="underline leading-8 underline-offset-8	decoration-8 decoration-blue-400">Smartphone <p>&</p> Notebook/pc's</span>
@@ -222,14 +214,30 @@ const HomePage = () => {
 								className="hover:bg-blue-300 hover:text-white flex items-center justify-center w-full h-12 px-6 text-sm uppercase bg-white text-emerald-600 font-bold rounded-lg"
 								onClick={() => window.open("https://wa.me/5561995646646?text=Olá%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços.", "_blank")}
 							>
-								Solicitar Serviço
+								Solicitar Serviços
 							</button>
 						</div>
 					</div>
 				</div>
 
 			</div>
+		{/* explore page */}
+		<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
+				<h1 className='text-center text-5xl sm:text-6xl font-bold text-gray-300 mb-4'>
+					Explore nosso Catalogo
+				</h1>
+				<p className='text-center text-xl text-gray-300 mb-12 underline leading-8 underline-offset-8	decoration-4 decoration-blue-400'>
+				Descubra as últimas tendências da Tecnologia
+				</p>
 
+				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+					{categories.map((category) => (
+						<CategoryItem category={category} key={category.name} />
+					))}
+				</div>
+
+				{!isLoading && products.length > 0 && <FeaturedProducts featuredProducts={products} />}
+			</div>
 
 		</div>
 	);
