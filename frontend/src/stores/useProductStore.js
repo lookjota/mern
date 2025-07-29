@@ -23,7 +23,7 @@ export const useProductStore = create((set) => ({
         loading: false,
       }));
     } catch (error) {
-      toast.error(error.response.data.error);
+      toast.error(error.response?.data?.error || "Failed to create product");
       set({ loading: false });
     }
   },
@@ -35,8 +35,8 @@ export const useProductStore = create((set) => ({
       const response = await axios.get("/products");
       set({ products: response.data.products, loading: false });
     } catch (error) {
-      set({ error: "Failed to fetch products", loading: false });
-      toast.error(error.response.data.error || "Failed to fetch products");
+      set({ loading: false });
+      toast.error(error.response?.data?.error || "Failed to fetch products");
     }
   },
 
@@ -49,8 +49,8 @@ export const useProductStore = create((set) => ({
       set({ products: response.data.products, loading: false });
       console.log(response.data.products);
     } catch (error) {
-      set({ error: "Failed to fetch products", loading: false });
-      toast.error(error.response.data.error || "Failed to fetch products");
+      set({ loading: false });
+      toast.error(error.response?.data?.error || "Failed to fetch products");
     }
   },
 
@@ -67,7 +67,7 @@ export const useProductStore = create((set) => ({
       }));
     } catch (error) {
       set({ loading: false });
-      toast.error(error.response.data.error || "Failed to delete product");
+      toast.error(error.response?.data?.error || "Failed to delete product");
     }
   },
 
@@ -87,7 +87,7 @@ export const useProductStore = create((set) => ({
       }));
     } catch (error) {
       set({ loading: false });
-      toast.error(error.response.data.error || "Failed to update product");
+      toast.error(error.response?.data?.error || "Failed to update product");
     }
   },
 
@@ -98,7 +98,7 @@ export const useProductStore = create((set) => ({
       const response = await axios.get("/products/featured");
       set({ products: response.data, loading: false });
     } catch (error) {
-      set({ error: "Failed to fetch products", loading: false });
+      set({ loading: false });
       console.log("Error fetching featured products:", error);
     }
   },

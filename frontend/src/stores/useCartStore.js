@@ -40,7 +40,7 @@ export const useCartStore = create((set, get) => ({
 			get().calculateTotals();
 		} catch (error) {
 			set({ cart: [] });
-			toast.error(error.response.data.message || "An error occurred");
+			toast.error(error.response?.data?.message || "An error occurred");
 		}
 	},
 	clearCart: async () => {
@@ -62,7 +62,7 @@ export const useCartStore = create((set, get) => ({
 			});
 			get().calculateTotals();
 		} catch (error) {
-			toast.error(error.response.data.message || "An error occurred");
+			toast.error(error.response?.data?.message || "An error occurred");
 		}
 	},
 	removeFromCart: async (productId) => {
