@@ -1,10 +1,11 @@
 <h1 align="center">E-Commerce Store 🛒</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
 
-[Video Tutorial on Youtube](https://youtu.be/sX57TLIPNx8)
+MERN - React, Node.js, Express, MongoDB
+<p>
+https://mern-liard-delta.vercel.app/  
+</p>
 
-About This Course:
 
 -   🚀 Project Setup
 -   🗄️ MongoDB & Redis Integration
@@ -25,6 +26,23 @@ About This Course:
 -   🛡️ Data Protection
 -   🚀Caching with Redis
 -   ⌛ And a lot more...
+
+## 📦 Tecnologias
+
+- MongoDB (Atlas)
+- Express.js
+- React + Vite
+- Node.js
+- Tailwind CSS
+- Render (backend)
+- Vercel (frontend)
+
+## ⚙️ Instalação local
+
+```bash
+git clone https://github.com/lookjota/mern.git
+cd mern
+
 
 ### Setup .env file
 
