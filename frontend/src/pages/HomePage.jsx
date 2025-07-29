@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import CategoryItem from "../components/CategoryItem";
 import { useProductStore } from "../stores/useProductStore";
 import FeaturedProducts from "../components/FeaturedProducts";
@@ -86,6 +87,16 @@ const HomePage = () => {
 
 						&nbsp; &nbsp;<span> Fazer Orçamento </span>
 					</button>
+					
+					<Link 
+						to="/services"
+						className="hover:bg-green-500 bg-green-400 translate-y-1 text-[#fff] sm:text-lg text-xs font-bold py-2.5 px-6 rounded-full inline-flex items-center"
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+							<path fillRule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348L9.928 3.817c-.151-.904-.933-1.567-1.85-1.567h-1.844zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clipRule="evenodd" />
+						</svg>
+						&nbsp; &nbsp;<span> Ver Todos os Serviços </span>
+					</Link>
 				</div>
 
 				</section>
@@ -93,6 +104,17 @@ const HomePage = () => {
 					{/* Price */}
 			<div className="flex flex-col items-center justify-center min-h-screen p-10 text-green-100 md:p-20">
 				<h2 className="text-2xl font-medium">Assistência Técnica Especializada</h2>
+				<div className="text-center mb-8">
+					<Link 
+						to="/services"
+						className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200"
+					>
+						<span className="mr-2">Ver todos os serviços disponíveis</span>
+						<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+						</svg>
+					</Link>
+				</div>
 
 				<div className="flex flex-wrap items-center justify-center w-full max-w-4xl mt-8">
 					<div className="flex flex-col flex-grow mt-8 overflow-hidden bg-black rounded-lg shadow-lg">
@@ -237,6 +259,25 @@ const HomePage = () => {
 				</div>
 
 				{!isLoading && products.length > 0 && <FeaturedProducts featuredProducts={products} />}
+			</div>
+
+			{/* FAQ Section */}
+			<div className="text-center py-16 bg-gray-800 bg-opacity-50 rounded-lg mx-4 mb-8">
+				<h2 className="text-3xl font-bold mb-4 text-blue-400">
+					Perguntas Frequentes
+				</h2>
+				<p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+					Tem dúvidas sobre nossos serviços? Consulte nossa seção de perguntas frequentes ou entre em contato conosco.
+				</p>
+				<Link
+					to="/faq"
+					className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
+				>
+					❓ Ver FAQ Completo
+					<svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+					</svg>
+				</Link>
 			</div>
 
 		</div>

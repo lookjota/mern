@@ -5,6 +5,8 @@ import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
 import AdminPage from "./pages/AdminPage";
 import CategoryPage from "./pages/CategoryPage";
+import ServicesPage from "./pages/ServicesPage";
+import FAQPage from "./pages/FAQPage";
 
 import Navbar from "./components/Navbar";
 import { Toaster } from "react-hot-toast";
@@ -59,6 +61,8 @@ function App() {
 					/>
 					<Route path='/purchase-cancel' element={user ? <PurchaseCancelPage /> : <Navigate to='/login' />} />
 					<Route path='/category/:category' element={<CategoryPage />} />
+					<Route path='/services' element={<ServicesPage />} />
+					<Route path='/faq' element={<FAQPage />} />
 				</Routes>
 				{/* <Route '/product-details/:id' element={<ProductDetailsPage />} /> */}
 				<Footer/>

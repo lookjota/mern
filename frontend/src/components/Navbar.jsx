@@ -24,6 +24,20 @@ const Navbar = () => {
 						>
 							Pagina Principal
 						</Link>
+						<Link
+							to={"/services"}
+							className='text-gray-300 hover:text-blue-400 transition duration-300
+					 ease-in-out'
+						>
+							Serviços
+						</Link>
+						<Link
+							to={"/faq"}
+							className='text-gray-300 hover:text-blue-400 transition duration-300
+					 ease-in-out'
+						>
+							FAQ
+						</Link>
 						{user && (
 							<Link
 								to={"/cart"}
