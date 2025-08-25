@@ -44,8 +44,9 @@ const HomePage = () => {
 							<div className="flex flex-col items-center justify-center max-w-xl gap-6 mx-auto lg:flex-row mb-8">
 								<div className="relative">
 									<img
-										className='w-32 h-32 rounded-full border-4 border-purple-400 shadow-2xl shadow-purple-500/50'
+										className='w-32 h-32 rounded-full border-4 border-purple-400 shadow-2xl shadow-purple-500/50 object-cover object-center'
 										src='/profile.png'
+										alt="Profile"
 									/>
 									<div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white animate-pulse"></div>
 								</div>
