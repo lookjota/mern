@@ -212,7 +212,7 @@ const HomePage = () => {
 							<span className="font-semibold">Upgrade SSD 240gb</span>
 							<div className="flex items-center">
 								<span className="text-3xl">R$</span>
-								<span className="text-6xl font-bold">270</span>
+								<span className="text-6xl font-bold">250</span>
 								<span className="text-2xl text-white">,00</span>
 							</div>
 						</div>
@@ -253,8 +253,8 @@ const HomePage = () => {
 							<span className="font-semibold">Reparo Carcaça</span>
 							<div className="flex items-center">
 								<span className="text-3xl">R$</span>
-								<span className="text-5xl font-bold">99</span>
-								<span className="text-2xl text-white">,99</span>
+								<span className="text-5xl font-bold">100</span>
+								<span className="text-2xl text-white">,00</span>
 							</div>
 						</div>
 						<div className="p-10">
